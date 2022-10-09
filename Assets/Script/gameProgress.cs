@@ -20,11 +20,13 @@ public class gameProgress : MonoBehaviour
         
     }
 
+    // method untuk ngurangi nilai nyawa
     public float liveDecrease(){
         playerLive--;
         return playerLive;
     }
 
+    // method untuk menambah nilai koin
     public float coinCollected(){
         coinCollectedCount++;
         return coinCollectedCount;

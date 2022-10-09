@@ -53,10 +53,12 @@ public class playerMechanic : MonoBehaviour
     // Method dijalankan tiap frame 
     void Update()
     {
+        // ketika nyawa player habis
         if (pr.playerLive == 0)
         {
-            Destroy(gameObject);
-            secondCamera.SetActive(true);   
+            Destroy(gameObject); //hancurkan player
+            // second camera digunakan jika player mati, ada diluar GO Body dan di dalam GO Player, second camera dimatikan dari awal play game
+            secondCamera.SetActive(true);  // karena player hancur, otomatis main camera didalam Body juga akan hancur, jadi kita bisa langsung mengganikannya dengan second camera, set aktif true untuk memunculkan second kamera
 
         }
     }
@@ -91,6 +93,7 @@ public class playerMechanic : MonoBehaviour
         rb.position += moveWithAxis;
         Vector3 jumping = (transform.up * Input.GetAxis("Jump") * Time.deltaTime * jumpForce) + moveWithAxis;
         
+        // bisa coba pake ini, comment dulu yang atas
         // Vector3.forward
         // Vector3 moveWithoutAxis = Vector3.forward * Input.GetAxis("Vertical") * Time.deltaTime * speed;
         // transform.position += moveWithoutAxis;

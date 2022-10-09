@@ -24,6 +24,7 @@ public class coinScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+           // sama methodnya dari gameProgress
            pr.coinCollected(); 
            Destroy(gameObject);
         }    

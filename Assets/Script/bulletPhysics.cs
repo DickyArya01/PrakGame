@@ -21,9 +21,10 @@ public class bulletPhysics : MonoBehaviour
 
     /// This function is called every fixed framerate frame, if the MonoBehaviour is enabled.
     private void FixedUpdate()
+        
     {
-        transform.position += transform.forward * Time.deltaTime * bulletSpeed;
-        Destroy(gameObject, 3);
+        transform.position += transform.forward * Time.deltaTime * bulletSpeed; // harusnya line ini udah paham fungsinya
+        Destroy(gameObject, 3); // dalam fungsi destroy kita bisa inisiasi parameter kedua, yakni waktu, dengan menggunakan parameter waktu kita bisa mengatur berapa GO akan hancur terhitung dari ketika play scene (3 detik) 
 
     }
 
