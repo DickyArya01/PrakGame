@@ -1,2 +1,2 @@
 # PrakGame
-Ini merupakan project aslab game untuk pemberian materi game pada matakuliah prak game
+Repository ini berisi game unity yang dapat digunakan sebagai media pembelajaran bagi praktikan kelas praktikum game mahasiswa UIN Malang. Repository ini bertujuan untuk membantu praktikan dalam memahami cara membuat game menggunakan unity. Game-game yang disediakan dalam repository ini merupakan contoh game yang dibuat dengan menggunakan unity dan dapat dijadikan referensi bagi praktikan dalam pembuatan game mereka sendiri. 
